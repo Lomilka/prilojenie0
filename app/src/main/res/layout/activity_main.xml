@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DDDD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/KnopDalshe0"
+        android:layout_width="169dp"
+        android:layout_height="73dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="onClick_to_KnopDalshe0"
+        android:text="Привет"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <TextView
+        android:id="@+id/TextHello"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Приветствую в нашем приложении для подсчёта результатов голосования!"
+        android:textColor="#834553"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:id="@+id/iSoft"
+        android:layout_width="334dp"
+        android:layout_height="419dp"
+        android:layout_marginStart="120dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/isoft" />
+
+    <ImageView
+        android:id="@+id/privet2d"
+        android:layout_width="228dp"
+        android:layout_height="425dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637"
+        app:srcCompat="@drawable/privet2d" />
+
+    <ImageView
+        android:id="@+id/Balloon1"
+        android:layout_width="226dp"
+        android:layout_height="352dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/balloon1" />
+
+    <TextView
+        android:id="@+id/TextLomilka"
+        android:layout_width="148dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:text="Я - Ломилка"
+        android:textColor="#592424"
+        android:textSize="20sp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/Balloon1"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="@+id/Balloon1"
+        app:layout_constraintTop_toTopOf="@+id/Balloon1" />
+
+    <TextView
+        android:id="@+id/TextProvodnik"
+        android:layout_width="204dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="120dp"
+        android:alpha="0"
+        android:gravity="center"
+        android:text="Я буду вашим помощником в столь ответственном деле"
+        android:textColor="#592424"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/Balloon1"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/Balloon1"
+        app:layout_constraintTop_toTopOf="@+id/Balloon1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
