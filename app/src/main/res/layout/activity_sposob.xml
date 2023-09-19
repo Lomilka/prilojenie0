@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DDDD"
+    tools:context=".ActivitySposob">
+
+    <TextView
+        android:id="@+id/textOpisanie1Sposob5"
+        android:layout_width="193dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Многотуровое отсеивание"
+        android:textColor="#C56464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/knopSposob5"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <TextView
+        android:id="@+id/textOpisanie1Sposob4"
+        android:layout_width="193dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Борд"
+        android:textColor="#C56464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/knopSposob4"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <TextView
+        android:id="@+id/textOpisanie1Sposob3"
+        android:layout_width="193dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Кондорсе"
+        android:textColor="#C56464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/knopSposob3"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <TextView
+        android:id="@+id/textOpisanie1Sposob2"
+        android:layout_width="193dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="Два тура"
+        android:textColor="#C56464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/knopSposob2"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/TextOpisanie1Sposob1"
+        android:layout_width="193dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="У кого наибольший"
+        android:textColor="#C56464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/knopSposob1"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/knopSposob5"
+        android:layout_width="134dp"
+        android:layout_height="61dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="onClick_to_KnopSposob5"
+        android:text="Способ 5"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <TextView
+        android:id="@+id/knopSposob4"
+        android:layout_width="134dp"
+        android:layout_height="61dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="onClick_to_KnopSposob4"
+        android:text="Способ 4"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <TextView
+        android:id="@+id/knopSposob3"
+        android:layout_width="134dp"
+        android:layout_height="61dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="onClick_to_KnopSposob3"
+        android:text="Способ 3"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <TextView
+        android:id="@+id/knopSposob2"
+        android:layout_width="134dp"
+        android:layout_height="61dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="onClick_to_KnopSposob2"
+        android:text="Способ 2"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/knopSposob1"
+        android:layout_width="134dp"
+        android:layout_height="61dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="onClick_to_KnopSposob1"
+        android:text="Способ 1"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <ImageView
+        android:id="@+id/ihorror"
+        android:layout_width="224dp"
+        android:layout_height="288dp"
+        android:layout_marginEnd="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/izvet" />
+
+    <ImageView
+        android:id="@+id/Balloon2"
+        android:layout_width="261dp"
+        android:layout_height="536dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/knopSposob5"
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat="@drawable/balloon1" />
+
+    <TextView
+        android:id="@+id/textViberiteSposob"
+        android:layout_width="188dp"
+        android:layout_height="196dp"
+        android:gravity="center"
+        android:text="Выберите способ, которым хотите подсчитать голоса."
+        android:textColor="#592424"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Balloon2"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="@+id/Balloon2"
+        app:layout_constraintTop_toTopOf="@+id/Balloon2"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <TextView
+        android:id="@+id/TextPreduprejdenie"
+        android:layout_width="308dp"
+        android:layout_height="111dp"
+        android:gravity="center"
+        android:text="Внимание! В способах 3 и 4 вам надо будет проводить голосование. Во всех остальных достаточно ввести результат."
+        android:textColor="#592424"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,11 +2,11 @@ package com.itproger.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
             count_of_KKnopDalshe0 = 2;
 
         }else if (count_of_KKnopDalshe0==2){ //Третье нажатие
-        Toast.makeText(this, "Переход на 2 активити", Toast.LENGTH_SHORT).show();
-            TextView KnopDalshe0 = findViewById(R.id.KnopDalshe0);
-            KnopDalshe0.setText("Типа ты перешла");
+        //Переход на выбор способа
+            Intent intent = new Intent(this, ActivitySposob.class);
+            startActivity(intent);
         }
     }
 }
