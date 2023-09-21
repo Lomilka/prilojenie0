@@ -5,12 +5,17 @@
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_opisanie.xml" value="0.286231884057971" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_pered3i41.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_pered3i42.xml" value="0.35733695652173914" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_rezultat.xml" value="0.353713768115942" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_shoud_isave.xml" value="0.2269021739130435" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_sposob.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_vibran_sposob.xml" value="0.286231884057971" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_vvod_golosov.xml" value="0.2269021739130435" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="liberica-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="liberica-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

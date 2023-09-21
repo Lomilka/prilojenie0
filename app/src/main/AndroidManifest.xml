@@ -14,6 +14,21 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityRezultat"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPered3i4_2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPered3i4_1"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityShoudISave"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVvodGolosov"
+            android:exported="false" />
+        <activity
             android:name=".ActivityVibranSposob"
             android:exported="false" />
         <activity
