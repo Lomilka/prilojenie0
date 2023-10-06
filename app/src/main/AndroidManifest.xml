@@ -14,10 +14,16 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityVar5"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVar22"
+            android:exported="false" />
+        <activity
             android:name=".ActivityRezultat"
             android:exported="false" />
         <activity
-            android:name=".ActivityPered3i4_2"
+            android:name=".ActivityVar3"
             android:exported="false" />
         <activity
             android:name=".ActivityPered3i4_1"

@@ -12,7 +12,7 @@
         android:layout_width="281dp"
         android:layout_height="228dp"
         android:gravity="center"
-        android:text="Введите, сколько голосов получил кандидат?"
+        android:text="Введите, сколько голосо получил кандидат?"
         android:textColor="#834553"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"

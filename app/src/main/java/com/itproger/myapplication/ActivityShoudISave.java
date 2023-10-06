@@ -41,16 +41,39 @@ public class ActivityShoudISave extends AppCompatActivity {
     public void ostavKakEst(View view){
         Intent intentDaSave = new Intent(this, ActivityRezultat.class); //переход на 1 2 либо 5 в зависимости от Nom.sposobInt
         startActivity(intentDaSave);
+
+        if(Nom.sposobInt==1){
+            vars1();
+        }else if (Nom.sposobInt==5){
+            vars5();
+        }else if(Nom.sposobInt==2){
+            vars2();
+        }
+    }
+    public void vars1(){
+        Ball.var1();
+        Intent intentVars15 = new Intent(this,ActivityRezultat.class); //переход на Результат
+        startActivity(intentVars15);
+    }
+    public void vars5(){
+        Ball.var5();
+        Intent intentVars15 = new Intent(this,ActivityRezultat.class); //переход на Результат
+        startActivity(intentVars15);
+    }
+    public void vars2(){
+        Ball.var2();
+        Intent intentVars2 = new Intent(this,ActivityVar22.class); //переход на активитивар22
+        startActivity(intentVars2);
     }
     public void ochistit_i_na_vvod(View view){
         Intent intentNotSave = new Intent(this, ActivityVvodGolosov.class);
-        Ball.ballA.ima="";
+        //Ball.ballA.ima="";
         Ball.ballA.znach=0;
-        Ball.ballB.ima="";
+        //Ball.ballB.ima="";
         Ball.ballB.znach=0;
-        Ball.ballC.ima="";
+        //Ball.ballC.ima="";
         Ball.ballC.znach=0;
-        Ball.ballD.ima="";
+        //Ball.ballD.ima="";
         Ball.ballD.znach=0;
         Nom.predGolosa = false;
         startActivity(intentNotSave);

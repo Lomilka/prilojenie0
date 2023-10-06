@@ -2,8 +2,9 @@ package com.itproger.myapplication;
 
 import android.content.Intent;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-public class Nom { //Не забудь очистить в конце ветки способов значение Nom.sposobInt
+public abstract class Nom { //Не забудь очистить в конце ветки способов значение Nom.sposobInt
     public static boolean boolOpisSp1 = false;
     public static boolean boolOpisSp2 = false;
     public static boolean boolOpisSp3 = false;

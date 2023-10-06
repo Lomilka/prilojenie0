@@ -7,16 +7,60 @@
     android:background="#F4DDDD"
     tools:context=".ActivityRezultat">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="Clock"
-        android:text="Button"
+    <TextView
+        android:id="@+id/knopDoneDrugoi"
+        android:layout_width="303dp"
+        android:layout_height="116dp"
+        android:background="@drawable/mainknopka"
+        android:gravity="center"
+        android:onClick="vMenu"
+        android:text="Выбрать другой способ"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/TextRezultat"
+        android:layout_width="331dp"
+        android:layout_height="251dp"
+        android:gravity="center"
+        android:text="Победитель - канидат"
+        android:textColor="#834553"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/Balloon3"
+        android:layout_width="268dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/balloon1" />
+
+    <TextView
+        android:id="@+id/TextUraMolodec"
+        android:layout_width="198dp"
+        android:layout_height="82dp"
+        android:gravity="center"
+        android:text="Ураа, молоец!"
+        android:textColor="#834553"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Balloon3"
+        app:layout_constraintEnd_toEndOf="@+id/Balloon3"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="@+id/Balloon3"
+        app:layout_constraintTop_toTopOf="@+id/Balloon3"
+        app:layout_constraintVertical_bias="0.29" />
 </androidx.constraintlayout.widget.ConstraintLayout>
