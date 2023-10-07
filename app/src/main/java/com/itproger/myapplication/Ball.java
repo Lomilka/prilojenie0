@@ -23,6 +23,7 @@ public class Ball {
     public static int kolvoTurov = spisok.length - 1;          // 3
     public static Ball[][] all = new Ball[kolvoTurov][];
     public static int countOfNulls = 0;
+    public static int lox = 0;
 
     public Ball(int znach, String ima) {//конструктор
         this.znach = znach;
@@ -43,19 +44,18 @@ public class Ball {
         return Arrays.asList(arr).indexOf(val);
     }//чоэто
 
-               //      ДОПОЛНИТЕЛЬНО:
+    //      ДОПОЛНИТЕЛЬНО:
     //Убрать надпись My Application
     //Сделать приложению название и значок
     //Нарисовать и вставить фон и радостную (очень) Ломилку
     //Сделать невозможным отступление назад
     //Сделать невозможным ввести число если ничего не написано
     //Реализовать ввод имён.
-               //       ЖЕЛАТЕЛЬНО:
+    //       ЖЕЛАТЕЛЬНО:
     //5 ВАРИАНТТТ
     //Подчистить тосты
     //Добавить 3 и 4 варианты
     //Что если равно??
-
 
 
     //1)
@@ -95,104 +95,88 @@ public class Ball {
         /////Новый экран
         return "";
     }
-    public static String var22(){
+
+    public static String var22() {
         /////После нового экрана
         otwet = twoTur[0].znach > twoTur[1].znach ? twoTur[0].ima : twoTur[1].ima;
         return otwet;
     }
 
-
-
-
-    //5) по многотуровой системе, в которой в каждом туре отсеивается один, последний, кандидат.
-
-    //Добавить в каждом туре заново опрос....((((но это после того как считать научится хорошо
-    //Кандидат Null если мы сначала 5 вариант пробуем
-    //10 9 12 5 зациклилось на БЭ и выдает его победителем даже после 1 2 3 4 хотя до этого 1234 считало нормально
-    public static String var5() {
-        all = new Ball[kolvoTurov][];
-
-        all[0] = tablNach;
-        for (int y = 1; y < kolvoTurov; y++) {
+    public static void var5() { //метод  размещает в шахматном порядке таблицы tablNach и tablVtor внутри all
+    all[0] = tablNach;
+        for(int y = 1; y<kolvoTurov; y++) {
             if (all[y - 1] == tablNach) {
                 all[y] = tablVtor;
             } else {
                 all[y] = tablNach;
             }
         }
-        for (int k = 0; k < kolvoTurov; k++) {//-1
-            //////////////////////////////
-            for (int kk = 0; kk < spisok.length; kk++) {
-                if (all[k][kk] != null) {
-                    System.out.println("\nТур номер " + k + ", оставшиеся в живых: " + (all[k][kk].ima));
-                }
-            }
-            System.out.println("\n");
-            //////////////////////////////
-            int lox = 0;
-            for (int min = 1; min < spisok.length; min++) { //Находим лоха (минимум)
-                if (all[k][min] != null) {
-                    if (all[k][min].znach < all[k][lox].znach) {
-                        System.out.println("обнаружен новый минимум, это " + all[k][min].ima);
-                        lox = whatID(all[k], all[k][min]); //Нам нужно id лоха
-                    }
-                } else {
-                    countOfNulls = countOfNulls + 1; //да-да-да, костыль. Он тут чтоб А ЕСЛИ БАЛЛЫ РАВНЫ А А А задел на будущее так сказатб.
-                }
-            }
-            System.out.println("айди лоха " + lox);
-
-            if (lox > 0) {
-                System.out.println("id лоха > 0 --> Всё, что ДО него, щас сохраним");
-                if (k < kolvoTurov - 1) {
-                    for (int t = 0; t < lox; t++) {
-                        all[k + 1][t] = all[k][t];
-                    }
-                } else {
-                    otwet = all[kolvoTurov - 1][0].ima;
-                }
-            }
-
-            if (lox < (spisok.length - 1) - countOfNulls) {
-                System.out.println("id лоха < spisok.length-1 - *Число нулей в конце списка* --> Всё, что ПОСЛЕ него, щас сохраним");
-                if (k < kolvoTurov - 1) {
-                    System.out.println("Начнём сохранять с id " + (lox + 1));
-                    for (int tt = lox + 1; tt < spisok.length; tt++) {
-                        System.out.println("id сохраняемого = " + tt);
-                        if (all[k][tt] != null) {
-                            all[k + 1][tt - 1] = all[k][tt];
-                        }
-                    }
-                } else {
-                    otwet = all[kolvoTurov - 1][1].ima;
-                }
-            }
-
-            for (int n = 0; n < spisok.length; n++) {
-                all[k][n] = null;
-            }
-        }
-        tablNach = spisok;
-        Arrays.fill(tablVtor, null);
-        kolvoTurov = spisok.length - 1;
-        all = new Ball[kolvoTurov][];
-        countOfNulls = 0;
-        return otwet;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public static String var55() {
+//        for (int k = 0; k < kolvoTurov; k++) {//-1
+//            //////////////////////////////
+//            for (int kk = 0; kk < spisok.length; kk++) {
+//                if (all[k][kk] != null) {
+//                    System.out.println("\nТур номер " + k + ", оставшиеся в живых: " + (all[k][kk].ima));
+//                } else {
+//                    System.out.println("\nТур номер " + k + ", оставшееся место == null");
+//                }
+//            }
+//            System.out.println("\n");
+//            //////////////////////////////
+//            int lox = 0;
+//            for (int min = 1; min < spisok.length; min++) { //Находим лоха (минимум)
+//                if (all[k][min] != null) {
+//                    if (all[k][min].znach < all[k][lox].znach) {
+//                        System.out.println("обнаружен новый минимум, это " + all[k][min].ima);
+//                        lox = whatID(all[k], all[k][min]); //Нам нужно id лоха
+//                    }
+//                } else {
+//                    countOfNulls = countOfNulls + 1; //да-да-да, костыль. Он тут чтоб А ЕСЛИ БАЛЛЫ РАВНЫ А А А задел на будущее так сказатб.
+//                }
+//            }
+//            System.out.println("айди лоха " + lox);
+//
+//
+//            if (lox > 0) {
+//                System.out.println("id лоха > 0 --> Всё, что ДО него, щас сохраним");
+//                if (k < kolvoTurov - 1) {
+//                    for (int t = 0; t < lox; t++) {
+//                        all[k + 1][t] = all[k][t];
+//                    }
+//                } else {
+//                    otwet = all[kolvoTurov - 1][0].ima;
+//                }
+//            }
+//
+//            System.out.println("3 минус число нулей = ");
+//            System.out.println(countOfNulls);
+//
+//            if (lox < (spisok.length - 1) - countOfNulls) {
+//                System.out.println("id лоха < spisok.length-1 - *Число нулей в конце списка* --> Всё, что ПОСЛЕ него, щас сохраним");
+//                if (k < kolvoTurov - 1) {
+//                    System.out.println("Начнём сохранять с id " + (lox + 1));
+//                    for (int tt = lox + 1; tt < spisok.length; tt++) {
+//                        System.out.println("id сохраняемого = " + tt);
+//                        if (all[k][tt] != null) {
+//                            all[k + 1][tt - 1] = all[k][tt];
+//                        }
+//                    }
+//                } else {
+//                    otwet = all[kolvoTurov - 1][1].ima;
+//                }
+//            }
+//
+//
+//            //countOfNulls=countOfNulls+1; //да-да-да, костыль. Ну блин я не знаю, как динамически сокращать размер массива который не ArrayList
+//            for (int n = 0; n < spisok.length; n++) { //Обнуление всех элементов текущего списка
+//                all[k][n] = null;
+//            }
+//        }
+        return otwet;
+    }
+}
 //    //3) по системе Кондорсе, в результате парных сравнений кандидатов;
 //    public static String var3(){
 //        Ball[] kondorse = new Ball[]{ballA, ballB, ballC, ballD};
@@ -300,4 +284,3 @@ public class Ball {
 //        }
 //        return otwet;
 //    }
-}

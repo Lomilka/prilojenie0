@@ -56,7 +56,6 @@ public class ActivityShoudISave extends AppCompatActivity {
         startActivity(intentVars15);
     }
     public void vars5(){
-        Ball.var5();
         Intent intentVars15 = new Intent(this,ActivityRezultat.class); //переход на Результат
         startActivity(intentVars15);
     }
